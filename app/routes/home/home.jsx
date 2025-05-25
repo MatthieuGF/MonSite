@@ -103,9 +103,9 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
+        title="Concevoir le réseau de demain"
+        description="Création de solutions pour apprendre l’administration réseau et dev en environnement virtuel"
+        buttonText="Projets de stage"
         buttonLink="/projects/smart-sparrow"
         model={{
           type: 'laptop',
@@ -124,10 +124,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Mes projets personnels"
+        description="Création d'une IA et bien plus encore..."
+        buttonText="Voir les projets"
+        buttonLink="https://drive.google.com/drive/folders/1kQtU40ys1cbIa5_gbR6ZrG0EB4mgaTDZ?usp=drive_link"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -148,10 +148,10 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="View project"
-        buttonLink="/projects/slice"
+        title="Mon orientation et ressources"
+        description="Voici toutes les informations sur"
+        buttonText="Mes projets"
+        buttonLink="https://drive.google.com/drive/folders/1kQtU40ys1cbIa5_gbR6ZrG0EB4mgaTDZ?usp=drive_link"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',

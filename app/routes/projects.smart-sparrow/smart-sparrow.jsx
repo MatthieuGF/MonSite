@@ -70,14 +70,14 @@ const EarthSection = lazy(() =>
   import('./earth').then(module => ({ default: module.EarthSection }))
 );
 
-const title = 'Designing the future of education';
+const title = 'Technologie et ressources stage :';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  'Voici un lien menant au drive contenant les ressources et codes utilisés ainsi que les comptes-rendus créés lors de mes deux stages';
 const roles = [
-  'Art Direction',
-  'UX and UI Design',
-  'Front End Development',
-  'Motion Design',
+  'Linux (Debian / Raspberry Pi OS)',
+  'Tailscale (VPN Mesh sécurisé)',
+  'ModemManager / NetworkManager',
+  'SFTP + SSH (sécurité et transfert de fichiers)',
 ];
 
 export const meta = () => {
@@ -105,7 +105,7 @@ export const SmartSparrow = () => {
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
+          url="https://drive.google.com/drive/folders/1kQtU40ys1cbIa5_gbR6ZrG0EB4mgaTDZ?usp=sharing"
           roles={roles}
         />
         <ProjectSection padding="top">
@@ -132,15 +132,15 @@ export const SmartSparrow = () => {
         </ProjectSection>
         <ProjectSection>
           <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
+            <ProjectSectionHeading>Site Wordpress</ProjectSectionHeading>
             <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
+              Lors de mon premier stage, la demande que j'ai reçue était de mettre
+              mettre en place un site internet sécurisé hébergé sur wordpress
+              permettant aux clients de pouvoir avoir les informations plus facilement
+              mais également de prendre rendez-vous et d'avoir la localisation du magasin.
+              Ce site que j'ai entièrment codé m'a permis de
+              revoir les bases que j'avais et d'avoir une véritable mise en situation
+              avec des besoins et limitations claires et précises.
             </ProjectSectionText>
           </ProjectTextRow>
         </ProjectSection>
@@ -173,13 +173,13 @@ export const SmartSparrow = () => {
               </SegmentedControl>
             </ProjectTextRow>
             <ProjectTextRow>
-              <ProjectSectionHeading>The aero design system</ProjectSectionHeading>
+              <ProjectSectionHeading>Les extensions utilisées</ProjectSectionHeading>
               <ProjectSectionText>
-                To streamline the design process across designers and engineers for such a
-                large project, it was important to lay the foundations with a strong,
-                flexible design system that could evolve during the product’s development
-                cycle. This would inform both the aesthetics and user experience across
-                the product itself as well as the website and marketing material.
+                Afin d'avoir un site internet agréable à voir. Plusieurs extensions
+                ont été utilisées lors de la création finale du site web, le code étant
+                la base du produit et permettant de valider si il était conforme à 
+                la demande du client. Par la suite des extensions comme Royal Elementor,
+                UiCoreAnimate ou BlocksAnimation ont été utilisées.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -205,12 +205,12 @@ export const SmartSparrow = () => {
               sizes="100vw"
             />
             <ProjectTextRow>
-              <ProjectSectionHeading>Design system docs</ProjectSectionHeading>
+              <ProjectSectionHeading>Autres informations</ProjectSectionHeading>
               <ProjectSectionText>
-                A design system is useless if no one knows how to use it, so we put
-                together a comprehensive documentation website to cover principles, ux,
-                accessibility, and component guidelines for designers and engineers
-                working with the system.
+                Afin de trouver la solution qui convenait à mon client, plusieurs
+                prototypes ont été créés et à la fin de chaque semaine un compte-rendu
+                qu'il soit oral ou écrit était fait afin de valider l'avancée du
+                produits créé.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
@@ -232,12 +232,12 @@ export const SmartSparrow = () => {
             <ProjectSectionColumns width="full">
               <ProjectSectionContent width="full">
                 <ProjectTextRow width="s">
-                  <ProjectSectionHeading>Motion design</ProjectSectionHeading>
+                  <ProjectSectionHeading>Contraintes rencontrées</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Animation was a core principle in making the authoring experience a
-                    more understandable process. Elements animate in ways that indicate
-                    the cause and effect of each interaction to improve the fluidity of
-                    the overall experience.
+                    N'étant pas dans l'option SLAM, la demande me parut au début pas
+                    intéressante mais malgré cela, ce projet m'a permis de revoir certaines
+                    notions importantes vis-à-vis du RGPD, CNIL et autres organismes, tout en
+                    renforçant mes connaissances.
                   </ProjectSectionText>
                 </ProjectTextRow>
               </ProjectSectionContent>
@@ -257,13 +257,13 @@ export const SmartSparrow = () => {
         <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow>
-              <ProjectSectionHeading>Encouraging adaptivity</ProjectSectionHeading>
+              <ProjectSectionHeading>L’approche réseau</ProjectSectionHeading>
               <ProjectSectionText>
-                A major part of solving for collaboration was being able to visualize the
-                learner experience in the editor. This was especially beneficial for
-                subject matter experts and instructors need to review and give feedback on
-                the higher level structure without having to dig through all of the
-                adaptivity scenarios screen by screen.
+                Dans mon second stage, j’ai déployé une architecture réseau moderne basée
+                sur Debian 12, Tailscale (VPN), et ModemManager (connexion 4G via clé USB Huawei)
+                Grâce à ces outils, j’ai pu configurer une connectivité mobile persistante, 
+                sécurisée, et stable, capable de fonctionner même hors réseau classique. 
+                Me permettant de beaucoup apprendre.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -291,14 +291,14 @@ export const SmartSparrow = () => {
             <ProjectSectionContent>
               <ProjectTextRow>
                 <ProjectSectionHeading>
-                  An extensible plugin ecosystem usable by everyone
+                  Automatisation & supervision du projet
                 </ProjectSectionHeading>
                 <ProjectSectionText>
-                  The most powerful aspect of the platform is the ability to create custom
-                  plugins for any content, whether it be a degree, course, lesson, screen,
-                  or interactive component. Out of the box these can be made configurable
-                  with minimal effort from developers. Learning designers can then edit
-                  everything using a common configuration interface.
+                  L’un des points clés de mon projet a été la transmission automatique de données 
+                  depuis un capteur, configurée avec SFTP, lftp et inotify-tools.
+                  J’ai automatisé les synchronisations grâce à un script Bash lancé au
+                  démarrage via systemd, rendant le système autonome.
+                   En parallèle, j’ai prévu une structure évolutive permettant de monitorer ou modifier le code à distance via SSH.
                 </ProjectSectionText>
               </ProjectTextRow>
             </ProjectSectionContent>
@@ -414,12 +414,12 @@ export const SmartSparrow = () => {
                   <ProjectSectionContent>
                     <ProjectTextRow center>
                       <ProjectSectionHeading>
-                        Next-generation learning experiences
+                        Une progression entre développement et réseau
                       </ProjectSectionHeading>
                       <ProjectSectionText>
-                        The flexibility of the product allowed for developers to create
-                        engaging interactive experiences as highly configurable plugins
-                        that could then be used and manipulated by learning designers.
+                        Mon premier stage m’a permis de travailler le développement web.
+                        Le second a consolidé mes compétences en administration réseau et sécurité système. 
+                        Ensembles, ces projets m'ont permis de progresser.
                       </ProjectSectionText>
                     </ProjectTextRow>
                   </ProjectSectionContent>
@@ -439,12 +439,12 @@ export const SmartSparrow = () => {
                   <ProjectSectionContent width="xl">
                     <ProjectTextRow justify="end" width="s">
                       <ProjectSectionHeading level={4} as="h3">
-                        Bringing 3D into learning
+                        Poursuite d'études ?
                       </ProjectSectionHeading>
                       <ProjectSectionText>
-                        One really cool example is the 3D screen plugin. Learning
-                        designers can load any model into it and then configure camera
-                        positions to animate to for each section.
+                        Je comptais faire une Licence Pro Administration et Sécurité des Systèmes et Réseaux
+                        à l'université de Montpellier
+                        afin d'améliorer mes acquis et développer mes compétences.
                       </ProjectSectionText>
                     </ProjectTextRow>
                   </ProjectSectionContent>
@@ -467,12 +467,12 @@ export const SmartSparrow = () => {
                   <ProjectSectionContent width="xl">
                     <ProjectTextRow justify="start" width="s">
                       <ProjectSectionHeading level={4} as="h3">
-                        Interactivity
+                        Et après?
                       </ProjectSectionHeading>
                       <ProjectSectionText>
-                        Learners can then be directed to specific parts of the model and
-                        shown labels. They’re also able to click and drag to orbit around
-                        and freely explore at any time.
+                        Mon ancien patron de stage, m'ayant proposé de travailler avec son équipe
+                        je pensais, après ma licence, me faire embaucher chez eux afin de travailler
+                        dans un environnement qui me convient.
                       </ProjectSectionText>
                     </ProjectTextRow>
                   </ProjectSectionContent>
@@ -501,12 +501,12 @@ export const SmartSparrow = () => {
                   <ProjectSectionContent width="xl">
                     <ProjectTextRow justify="end" width="s">
                       <ProjectSectionHeading level={4} as="h3">
-                        Animation
+                        Autres : 
                       </ProjectSectionHeading>
                       <ProjectSectionText>
-                        Learning designers can pick an animation included in the model to
-                        play or loop for any section without having to use any complex
-                        animation tools.
+                        Je compte également développer mes connaisances en web-design
+                        afin de créer de meilleurs sites, en utilisant des animations
+                        comme celle-ci :
                       </ProjectSectionText>
                     </ProjectTextRow>
                   </ProjectSectionContent>
@@ -537,14 +537,14 @@ export const SmartSparrow = () => {
                   d="M35.47 30.82c6.24-11.43 4.15-22.73-4.81-27.77C20.76-2.5 7.84.52 2.28 12.46c-3.84 8.2-2.1 22.48 6.82 27.6 8.92 5.1 20.9.81 26.37-9.23Zm-3.02-12.15c.3-2.3-.24-5.1-2-6.95l-.02-.02c-3.38-3.76-8.06-4-11.02-3.92a16.61 16.61 0 0 0-7.55 2.14c-1.68.86-3.2 2.35-3.81 3.08-.4.47-1.06 1.44-.7 2.31.29.73 1.4.68 1.81.37.22-.16.45-.37.7-.6l.72-.64c2.53-2.07 4.78-3.37 10-3.37 5.23 0 8.06 3.22 8.06 6.09 0 2.87-1.38 4.82-3.97 6.09a10.54 10.54 0 0 1-4.4 1.18c.13-2.78.2-5.41.2-5.41 0-.33.02-.65.03-.96.07-1.55.12-2.72-1.01-2.94-1.36-.27-3.86 0-3.9 1.52-.06-.23.25 12.51.31 12.77l.02.29c.03.32.15.6.35.83a1.38 1.38 0 0 0 .98.41c.28 0 .68-.05 1.09-.16.5-.15 1.02-.39 1.31-.77.15-.2.27-.38.34-.72.04-.24.13-1.72.15-2.15 2.75-.02 5.54-.53 7.67-1.8 2.68-1.62 4.29-4.04 4.64-6.67ZM18.23 32.41a2.12 2.12 0 0 1 1.69 1.99c0 .52-.22.99-.63 1.32-.35.28-.8.43-1.3.43h-.01c-.23 0-.46-.03-.69-.1-.39-.1-.7-.29-.9-.52-.19-.22-.31-.5-.37-.83-.08-.5.05-1.04.36-1.48a1.9 1.9 0 0 1 1.53-.84c.1 0 .22 0 .32.03Z"
                 />
               </svg>
-              <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
+              <ProjectSectionHeading>Conclusion BTS SIO</ProjectSectionHeading>
               <ProjectSectionText>
-                Ultimately the project was successful after Smart Sparrow and the aero
-                platform were{' '}
-                <Link href="https://www.prnewswire.com/news-releases/pearson-acquires-interactive-learning-technology-from-smart-sparrow-300987673.html">
-                  acquired by Pearson in 2020
+                Finalement le BTS SIO option SISR de l'établissement du
+                Lycée {' '}
+                <Link href="https://jean-mermoz-montpellier.mon-ent-occitanie.fr/">
+                  Jean Mermoz.
                 </Link>{' '}
-                to become a foundation for their next generation learning platform.
+                m'a permis de renforcer mes connaissances et de beaucoup apprendre dans différents domaines.
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>

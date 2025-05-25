@@ -8,7 +8,7 @@
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
-    "dev": "node ./scripts/dev.cjs && remix vite:dev",
+    "portfolio": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
     "deploy": "npm run build && wrangler pages deploy ./build/client --project-name portfolio",
@@ -22,6 +22,7 @@
     "@remix-run/cloudflare": "^2.7.1",
     "@remix-run/cloudflare-pages": "^2.7.1",
     "@remix-run/react": "^2.7.1",
+    "@remix-run/vercel": "^1.19.3",
     "framer-motion": "11.0.5",
     "isbot": "^4.1.0",
     "miniflare": "^3.20231030.4",
